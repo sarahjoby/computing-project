@@ -1,0 +1,454 @@
+
+
+body {
+  background-color: #FEE7F8;
+}
+
+#scroll {
+box-sizing: border-box;
+white-space: nowrap;
+font: 12px system-ui; 
+overflow: auto;
+padding: 7px;
+height: 15em;
+width: 15em;
+border-radius: 6px;
+border: 1px solid #888;
+}
+  
+.con {
+height: 95%;
+width: 95%; 
+white-space: normal;
+display: inline-block;
+padding: .2em;
+vertical-align: middle;
+overflow: auto; 
+border-radius: 6px;
+border: 1px solid #888;
+}
+.con:nth-child(2) {
+margin: 0 5px 0 5px;
+}
+  
+::-webkit-scrollbar {
+width: 14px
+}
+
+::-webkit-scrollbar:horizontal {
+height: 14px
+}
+
+::-webkit-scrollbar-corner {
+background: #eee
+}
+
+::-webkit-scrollbar-track:vertical {
+background: linear-gradient(90deg, #e5e5e5, #f0f0f0 20%);
+border-radius: 5px; 
+}
+
+::-webkit-scrollbar-track:horizontal {
+background: linear-gradient(180deg, #e5e5e5, #f0f0f0 20%);
+border-radius: 5px; 
+}
+
+::-webkit-scrollbar-thumb {
+border: 1.5px solid #888;
+border-radius: 5px;
+box-shadow: inset 0 -1px 1px #fff, inset 0 1px 1px #fff;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+background: linear-gradient(90deg, #eee 45%, #ddd 0, #bbb);
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+background: linear-gradient(180deg, #eee 45%, #ddd 0, #bbb);
+}
+
+::-webkit-scrollbar-button:horizontal:end:increment,
+::-webkit-scrollbar-button:horizontal:start:decrement,
+::-webkit-scrollbar-button:vertical:end:increment,
+::-webkit-scrollbar-button:vertical:start:decrement {
+display: block
+}
+
+::-webkit-scrollbar-button:vertical {
+height: 15px
+}
+
+::-webkit-scrollbar-button:vertical:start:decrement {
+background: white;
+background: url("https://dl.dropbox.com/s/n9ji42h9hdgdtpc/scroll3.png"), #eee;
+background-repeat: no-repeat;
+background-position: center;
+-moz-background-size: 100% auto, cover;
+-webkit-background-size: 100% auto, cover;
+-o-background-size: 100% auto, cover;
+background-size: 100% auto, cover;
+border: 1.5px solid #888;
+border-radius: 5px;
+}
+
+::-webkit-scrollbar-button:vertical:start:increment {
+display: none;
+}
+
+::-webkit-scrollbar-button:vertical:end:decrement {
+display: none;
+}
+
+::-webkit-scrollbar-button:vertical:end:increment {
+background: white;
+background: url("https://dl.dropbox.com/s/cdcco6pih7n1lae/scroll4.png"), #eee;
+background-repeat: no-repeat;
+background-position: center;
+-moz-background-size: 100% auto, cover;
+-webkit-background-size: 100% auto, cover;
+-o-background-size: 100% auto, cover;
+background-size: 100% auto, cover;
+border: 1.5px solid #888;
+border-radius: 5px;
+}
+  
+::-webkit-scrollbar-button:horizontal {
+width: 14px
+}
+::-webkit-scrollbar-button:horizontal:start:increment {
+display: none;
+}
+::-webkit-scrollbar-button:horizontal:end:decrement {
+display: none;
+}
+
+::-webkit-scrollbar-button:horizontal:start:decrement {
+background: white;
+background: url("https://dl.dropbox.com/s/xcm618ghd823271/scroll5.png"), linear-gradient(180deg, #e5e5e5, #f0f0f0 20%);
+background-repeat: no-repeat;
+background-position: center;
+-moz-background-size: 100% auto, cover;
+-webkit-background-size: 100% auto, cover;
+-o-background-size: 100% auto, cover;
+background-size: 100% auto, cover;
+background-position: center;
+border-radius: 5px;
+border: 1.5px solid #888;
+}
+  
+::-webkit-scrollbar-button:horizontal:end:increment {
+background: white;
+background: url("https://dl.dropbox.com/s/byeyi7am889ii9m/scroll6.png"), linear-gradient(180deg, #e5e5e5, #f0f0f0 20%);
+background-repeat: no-repeat;
+background-position: center;
+-moz-background-size: 100% auto, cover;
+-webkit-background-size: 100% auto, cover;
+-o-background-size: 100% auto, cover;
+background-size: 100% auto, cover;
+background-position: center;
+border-radius: 5px;
+border: 1.5px solid #888;
+}
+
+
+.chilanka-regular {
+  font-family: 'Chilanka', cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lavishly-yours-regular {
+  font-family: "Lavishly Yours", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.bellota-light {
+  font-family: "Bellota", system-ui;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.bellota-regular {
+  font-family: "Bellota", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bellota-bold {
+  font-family: "Bellota", system-ui;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.bellota-light-italic {
+  font-family: "Bellota", system-ui;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.bellota-regular-italic {
+  font-family: "Bellota", system-ui;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.bellota-bold-italic {
+  font-family: "Bellota", system-ui;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.ballet-regular {
+  font-family: "Ballet", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:'Whisper';
+    scroll-behavior: smooth;
+}
+
+.navbar {
+   background: #470037 ;
+   height: 80px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 1.2rem;
+   position: sticky;
+   top: 0;
+   z-index: 999;
+}
+
+.navbar__container {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+#navbar__logo {
+    background-color: none;
+    background-size: 100%;
+    -webkit-text-fill-color: #FEE7F8;
+    -moz-text-fill-colour: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 4rem;
+}
+
+.navbar__menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+
+}
+
+.navbar__item{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.navbar__item{
+    height: 100px;
+}
+
+.navbar__links {
+    color: #FEE7F8;
+    display: flex;
+    align-items:  center;
+    justify-content: center ;
+    width: 125px;
+    text-decoration: none;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.hero{
+    min-height: 100dvh; 
+}
+
+.navbar__btn {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 0 1rem;
+    width: 100%;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: cyan;  
+}
+
+.navbar__links:hover {
+    color: #612854;
+    transition: all 0.3s ease;
+}
+
+
+.my_button{
+    padding: 12px 24px;
+    border-radius: 0%;
+    width: 30px;
+    background-color: #470037;
+    border: none;              
+    border-radius: 8px; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 200px;
+    font-size: 90px;
+    -webkit-text-fill-color: #FEE7F8;
+    font-family:'Parisienne';
+}
+
+.my_button:hover{
+    background-color: #612854;
+    transition: all 0.3s ease;
+}
+
+
+.main {
+    background-color: #FEE7F8;
+    padding: 10rem 0;
+    scroll-behavior: smooth;
+    scroll-margin-top: -400px;
+
+}
+
+.main__container {
+    display: grid;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    height: 90%;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 50px;
+}
+
+.main__content{
+    color: #612854;
+    width: 100%;
+    margin-top: 100px; 
+    padding-top: 20px;
+}
+
+.main__content h1{
+    font-size: 2rem;
+    background-color: greenyellow;
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: #612854;
+    -moz-text-fill-colour: transparent;
+    break-before: page;
+    margin-top: 200px;
+    font-family: 'Chilanka', cursive;
+    margin-bottom: 32px;
+}
+
+.main__content p{
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: #612854;
+    -moz-text-fill-colour: transparent;
+    font-family: 'Chilanka', cursive;
+    }
+
+
+.page{
+    width:100vw;
+    min-height:100vh;
+    background:#FEE7F8; 
+    display:none;
+    padding:40px;
+    box-sizing:border-box;
+}
+
+.page__container{
+    font-size: 1rem;
+    margin-bottom: 440px;
+    font-weight: 700;
+    font-family: 'Chilanka', cursive;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    height: 90%;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 50px;
+}
+
+
+ 
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    box-sizing: border-box;
+    height: 88vh;
+}
+
+.box {
+    border: 3px solid #612854;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    font-size: clamp(20px, 2vw, 60px);
+    font-family: "Bellota", system-ui;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: hotpink;
+}
+
+
+

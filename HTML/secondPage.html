@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <div id="secondPage.html"></div>
+    <link rel="manifest" href="manifest.json">
+    <title> website </title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="theme-colour"
+    content="#FEE7F8">
+    
+    <a href="#page" id="page-link">
+    
+</head>   
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Whisper&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Chilanka&family=Lavishly+Yours&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&display=swap" rel="stylesheet">
+
+
+<body class="secondPage">
+    <!--navbar selection-->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="#home" id="navbar__logo">aléatoire</a>
+        <div class="navbar__toggle" id="mobile menu">
+            <span class = "bar"></span> <span class = "bar"></span>
+            <span class = "bar"></span>
+        </div>
+    </nav>
+
+
+<div class="container">
+
+    <div class="box" id="outfit">
+        <h2>outfit</h2>
+    </div>
+
+    <div class="box" id="makeup">
+        <h2>makeup</h2>
+    </div>
+
+    <div class="box" id="activity">
+        <h2>activity</h2>
+    </div>
+
+    <div class="box" id="colour">
+        <h2>colours</h2>
+    </div>
+
+    <div class="box" id="song">
+        <h2>song</h2>
+    </div>
+
+    <div class="box" id="movie">
+        <h2>movie</h2>
+    </div>
+
+</div>
+
+<script type="text/javascript">
+        if('serviceWorker' in navigator){
+           navigator.serviceworker.register('/service-worker.js') 
+           then(()=>console.log("Service worker registered"))
+           .catch((error)=>console.log("Service worker failed", error));
+        }
+     </script>
+
+
+<script src="script.js"></script>
+    </body>
+
+
+</html>
