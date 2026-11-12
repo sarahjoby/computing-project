@@ -1,0 +1,20 @@
+{
+    "name": "aléatoire",
+    "short_name": "aléatoire",
+    "start_url": "/",
+    "display": "standalone",
+    "background_colour": "ffffff",
+    "theme_colour": "#5b0f66",
+    "icons":[
+        {
+        "src": "PASTEL PIXELS IV, red heart art transparent background PNG clipart.png",
+        "sizes": "192x192",
+        "type": "image/png"
+        },
+        {
+            "src":"download(3).png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
